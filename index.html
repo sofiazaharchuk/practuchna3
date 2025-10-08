@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфоліо — Дарина Костенко</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Олександр Коваленко - Портфоліо</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ABOUT ME</div>
+                <nav>
+                    <a href="#bio" class="nav-link active">Біо</a>
+                    <a href="#education" class="nav-link">Освітня</a>
+                    <a href="#skills" class="nav-link">Скілтеки</a>
+                </nav>
+            </div>
+            
+            <div class="profile-section">
+                <div class="profile-avatar">
+                    <div class="avatar-circle"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="info-left">
+                        <p>СТАТУС</p>
+                        <p class="status">Фронтенд розробник</p>
+                    </div>
+                    <div class="info-right">
+                        <p>МОЯ СТАТЬ Я</p>
+                        <p class="quote">"Код - це поезія логіки"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        function showSection(sectionId) {
+            
+            document.querySelectorAll('.info-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = 'flex';
+            }
+        }
 
+        function hideSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+    </header>
